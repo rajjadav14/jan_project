@@ -1,0 +1,29 @@
+{
+  "name": "jan_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajjadav14/jan_project.git"
+  },
+  "author": "rajdeep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajjadav14/jan_project/issues"
+  },
+  "homepage": "https://github.com/rajjadav14/jan_project#readme",
+  "dependencies": {
+    "bcryptjs": "npm:undefined@^",
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "express-validator": "^6.9.2",
+    "gravatars": "^1.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.12",
+    "request": "^2.88.2"
+  }
+}
