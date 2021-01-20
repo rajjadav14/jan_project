@@ -8,4 +8,5 @@ const PORT = process.env.PORT || 5000;
 app.listen(PORT,()=>console.log("server startes"));
 app.get('/',(req,res)=>res.send('api running'));
 connectDB();
+app.use(express.json());
 app.use('/api/user',router)
