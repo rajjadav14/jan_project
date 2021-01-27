@@ -4,6 +4,7 @@ import config from 'config';
 import {Iuser,Ijwtdecoded} from '../interface/interfaces';
 
 export const auth = (req:any,res:any,next:any):any=>{
+    console.log("auth middleware")
 
     // get token from header
     const token = req.header('x-auth-token');
