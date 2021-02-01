@@ -22,7 +22,7 @@ router.post('/', [auth,
                 text: req.body.text,
                 name: user.name,
                 avatar: user.avatar,
-                usesr: req.user.id
+                user: req.user.id
             });
 
             const post = await newPost.save();
@@ -70,12 +70,9 @@ router.delete('/:id',auth,async(req:any,res)=>{
         const post = await postModel.findById(req.params.id);
 
         if(!post) return res.status(404).json({msg:'Post not found'});
-        console.log(post);
-       
-        console.log(req.user.id);
-        console.log(post.user.toString());
+
         // Check user
-        if(post.user !== req.user.id){
+        if(post.user.toString() !== req.user.id){
             return res.status(404).json({msg:'User not Authorized'});
         }
 
